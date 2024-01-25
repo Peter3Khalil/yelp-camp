@@ -1,11 +1,12 @@
 import React from 'react'
 import { Button } from './ui/button'
+import Link from 'next/link'
 
 const Banner = () => {
   return (
     <div
       className="flex h-[60vh] w-full  items-center justify-start bg-cover bg-center bg-no-repeat  p-10  lg:h-[80vh]  lg:bg-top"
-      style={{ backgroundImage: 'url(../banner2.jpg)' }}
+      style={{ backgroundImage: 'url(/banner2.jpg)' }}
     >
       <div className="flex flex-col  gap-5 ">
         <div className="flex flex-col gap-1">
@@ -19,9 +20,11 @@ const Banner = () => {
             Sweatshirt, Hoodie, <span className="block md:inline">jackets, Jeans</span>
           </p>
         </div>
-        <Button className="w-fit bg-foreground p-6 text-lg text-background hover:bg-popover transition-colors duration-200 ease-in-out hover:text-popover-foreground">
+        <Link href="/products">
+        <Button className="w-fit p-6 text-lg">
           Shop now
         </Button>
+        </Link>
       </div>
     </div>
   )

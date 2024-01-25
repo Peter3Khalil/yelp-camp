@@ -1,1 +1,7 @@
-export { AiOutlineMenu, AiOutlineShoppingCart, AiOutlineSearch } from 'react-icons/ai'
+export {
+  AiOutlineMenu,
+  AiOutlineShoppingCart,
+  AiOutlineSearch,
+  AiFillFacebook,
+  AiOutlineInstagram,
+} from 'react-icons/ai'

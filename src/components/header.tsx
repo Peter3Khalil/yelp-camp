@@ -1,6 +1,7 @@
 import React from 'react'
 import { AiOutlineMenu, AiOutlineSearch, AiOutlineShoppingCart } from './shared/icons'
 import Link from 'next/link'
+import Logo from './shared/logo'
 
 type LinkType = {
   href: string
@@ -17,20 +18,18 @@ const links: LinkType[] = [
     label: 'all products',
   },
   {
-    href:"/collections",
-    label:"collections"
-  }
+    href: '/collections',
+    label: 'collections',
+  },
 ]
 
 const Header = () => {
   return (
-    <header className="flex h-20 w-full items-center justify-between border-b bg-background px-4 text-foreground lg:px-6 sticky top-0">
+    <header className="sticky top-0 z-10 flex h-20 w-full items-center justify-between border-b bg-background px-4 text-foreground lg:px-6">
       <button className="text-xl lg:hidden" title="menu" aria-label="Open Menu">
         <AiOutlineMenu />
       </button>
-      <h1 className="text-2xl font-bold" title="logo">
-        Logo
-      </h1>
+      <Logo />
       <nav className="hidden gap-12 lg:flex" aria-label="Primary">
         <ul className="flex gap-12">
           {links.map((link, index) => {
