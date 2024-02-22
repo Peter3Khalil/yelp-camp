@@ -21,7 +21,7 @@ const Home = () => {
           <section className="relative h-[45vh] w-full shrink-0 md:h-[38vh] lg:order-2  lg:h-full lg:w-[40%]">
             <picture className="h-full w-full">
               <source media="(min-width: 1024px)" srcSet="/Assets/hero-large.jpg" />
-              <Image src="/Assets/hero-mobile.jpg" alt="hero" layout="fill" objectFit="cover" />
+              <Image src="/Assets/hero-mobile.jpg" alt="hero" layout="fill" className='absolute object-cover top-0 left-0' />
             </picture>
           </section>
           <section className="lg:flex  lg:h-full  lg:flex-1 lg:shrink-0 lg:flex-col lg:px-32">

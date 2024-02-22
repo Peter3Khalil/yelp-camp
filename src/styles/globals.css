@@ -63,5 +63,12 @@
 
 
 #__next{
+  height: 100%;
+}
+body{
   height: 100svh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  overflow-y: auto;
 }
