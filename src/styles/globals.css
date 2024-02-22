@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
 
 
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -26,7 +27,7 @@
     --border: 240 5.9% 90%;
     --input: 240 5.9% 90%;
     --ring: 240 5.9% 10%;
-    --radius: 0.3rem;
+    --radius: 0.5rem;
   }
 
   .dark {
@@ -53,12 +54,12 @@
 }
 
 
+
 * {
   box-sizing: border-box;
 }
-#footer-large div:first-of-type{
-  align-items: start;
-}
-#footer-large div:last-of-type{
-  align-items: end;
+
+
+#__next{
+  height: 100svh;
 }
