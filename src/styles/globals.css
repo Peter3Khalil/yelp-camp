@@ -61,7 +61,9 @@
   padding: 0;
 }
 
-
+body{
+  height: 100svh;
+}
 #__next{
   height: 100%;
 }

@@ -14,7 +14,7 @@ const Home = () => {
       <main className="flex h-full fixed top-0 left-0 w-full flex-col overflow-auto bg-background text-foreground antialiased">
         {/* Hidden for large screen */}
         <header className="sticky top-0 z-10 flex h-16 w-full shrink-0 items-center bg-inherit px-4 md:h-24 md:px-10 lg:hidden">
-          <Image src="/Assets/logo.svg" alt="logo" width={100} height={100} />
+          <Image aria-label='Logo of website is YelpCamp' src="/Assets/logo.svg" alt="logo" width={100} height={100} />
         </header>
         {/* ************** */}
         <div className="flex flex-col lg:h-full lg:flex-row">
@@ -24,13 +24,13 @@ const Home = () => {
               <Image src="/Assets/hero-mobile.jpg" alt="hero" layout="fill" className='absolute object-cover top-0 left-0' />
             </picture>
           </section>
-          <section className="lg:flex  lg:h-full  lg:flex-1 lg:shrink-0 lg:flex-col lg:px-32">
+          <section className="lg:flex lg:h-full lg:flex-1 lg:shrink-0 lg:flex-col lg:px-32">
             <header className="hidden h-20 w-full shrink-0 items-center bg-background  lg:flex">
               <Image src="/Assets/logo.svg" alt="logo" width={100} height={100} />
             </header>
             <div className="lg:flex lg:h-full lg:w-full lg:items-center lg:justify-center">
-              <article className="flex w-full shrink-0 flex-col gap-2 px-6 pt-6 text-left text-lg md:px-10 md:pt-10 md:text-xl lg:gap-2 lg:px-0 lg:pt-0 lg:text-[16px]">
-                <h1 className="text-4xl font-bold md:text-6xl">
+              <article className="flex w-full shrink-0 flex-col gap-2 px-8 pt-6 text-left text-lg md:px-10 md:pt-10 md:text-xl lg:gap-2 lg:px-0 lg:pt-0 lg:text-[16px]">
+                <h1 className="text-4xl font-bold md:text-6xl leading-none">
                   Explore the best <span className="lg:block">camps on Earth.</span>
                 </h1>
                 <p className="font-medium text-muted-foreground lg:w-[70%]">
@@ -43,12 +43,12 @@ const Home = () => {
                     'See locations for all camps.',
                   ].map((item, index) => (
                     <li key={index} className="flex items-center gap-2">
-                      <Image src="/Assets/Checkmark.svg" alt="checkmark" width={25} height={25} />
+                      <Image src="/Assets/Checkmark.svg" alt="checkmark" width={25} height={25} className='size-[20px] md:size-[25px]'/>
                       <span>{item}</span>
                     </li>
                   ))}
                 </ul>
-                <Button className={cn('w-fit lg:mt-4 mt-2 px-4 py-6 text-lg')}>
+                <Button className={cn('w-fit lg:mt-4 mt-2 px-4 py-6 text-lg md:text-md')}>
                   View Campgrounds
                 </Button>
                 <footer className="flex w-full shrink-0 flex-col bg-inherit pb-6 lg:mt-6 mt-4">
