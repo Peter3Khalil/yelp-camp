@@ -13,7 +13,7 @@ const Signup = () => {
         <meta name="description" content="Signup" />
       </Head>
       <main className="flex h-full w-full flex-col gap-8 overflow-auto bg-background text-foreground antialiased">
-        <header className="flex h-16 z-10 sticky top-0 w-full shrink-0 items-center justify-between bg-inherit px-6">
+        <header className="sticky top-0 z-10 flex h-16 w-full shrink-0 items-center justify-between bg-inherit px-6">
           <Image src="/Assets/logo.svg" alt="logo" width={100} height={100} aria-label="Logo of website is YelpCamp" />
           <button
             title="Back to campgrounds"
@@ -39,7 +39,7 @@ const Signup = () => {
               name="username"
               id="username"
               placeholder="peter3khalil"
-              className="w-full rounded bg-accent px-4 py-4 outline-none focus:border focus:border-muted-foreground"
+              className="w-full rounded border border-transparent bg-accent px-4 py-4 outline-none focus:border-muted-foreground"
             />
           </section>
           <section className="flex flex-col gap-3">
@@ -54,7 +54,7 @@ const Signup = () => {
               name="password"
               id="password"
               placeholder="Choose Password"
-              className="w-full rounded bg-accent px-4 py-4 outline-none focus:border focus:border-muted-foreground"
+              className="w-full rounded border border-transparent bg-accent px-4 py-4 outline-none focus:border-muted-foreground"
             />
           </section>
           <menu className="flex w-full flex-col gap-3">
@@ -69,7 +69,7 @@ const Signup = () => {
             </p>
           </menu>
         </form>
-        <footer className="flex flex-grow w-full shrink-0 flex-col gap-6 bg-accent px-6 py-8 text-accent-foreground">
+        <footer className="flex w-full shrink-0 flex-grow flex-col gap-6 bg-accent px-6 py-8 text-accent-foreground">
           <q className="text-xl font-bold text-accent-foreground">
             YelpCamp has honestly saved me hours of research time, and the camps on here are definitely well picked and
             added.
@@ -84,7 +84,7 @@ const Signup = () => {
             />
             <figcaption className="flex flex-col text-md">
               <p className="font-bold leading-none">May Andrews</p>
-              <span className="font-normal mt-1 text-muted-foreground">Professional Hiker</span>
+              <span className="mt-1 font-normal text-muted-foreground">Professional Hiker</span>
             </figcaption>
           </figure>
         </footer>
