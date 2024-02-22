@@ -11,7 +11,7 @@ const Home = () => {
         <title>YelpCamp</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
-      <main className="flex h-[100svh] w-full flex-col overflow-auto bg-background text-foreground antialiased">
+      <main className="flex h-full fixed top-0 left-0 w-full flex-col overflow-auto bg-background text-foreground antialiased">
         {/* Hidden for large screen */}
         <header className="sticky top-0 z-10 flex h-16 w-full shrink-0 items-center bg-inherit px-4 md:h-24 md:px-10 lg:hidden">
           <Image src="/Assets/logo.svg" alt="logo" width={100} height={100} />
@@ -29,7 +29,7 @@ const Home = () => {
               <Image src="/Assets/logo.svg" alt="logo" width={100} height={100} />
             </header>
             <div className="lg:flex lg:h-full lg:w-full lg:items-center lg:justify-center">
-              <article className="flex w-full shrink-0 flex-col gap-6 px-6 pt-6 text-left text-lg md:px-10 md:pt-10 md:text-xl lg:gap-2 lg:px-0 lg:pt-0 lg:text-[16px]">
+              <article className="flex w-full shrink-0 flex-col gap-2 px-6 pt-6 text-left text-lg md:px-10 md:pt-10 md:text-xl lg:gap-2 lg:px-0 lg:pt-0 lg:text-[16px]">
                 <h1 className="text-4xl font-bold md:text-6xl">
                   Explore the best <span className="lg:block">camps on Earth.</span>
                 </h1>
@@ -48,10 +48,10 @@ const Home = () => {
                     </li>
                   ))}
                 </ul>
-                <Button className={cn('w-fit px-6 py-8 text-xl lg:mt-2 lg:px-4 lg:py-6 lg:text-lg')}>
+                <Button className={cn('w-fit lg:mt-4 mt-2 px-4 py-6 text-lg')}>
                   View Campgrounds
                 </Button>
-                <footer className="flex w-full shrink-0 flex-col bg-inherit pb-6 lg:pt-6">
+                <footer className="flex w-full shrink-0 flex-col bg-inherit pb-6 lg:mt-6 mt-4">
                   <p className="text-xl font-normal">Partnered with:</p>
                   <ul className="flex items-center justify-between">
                     {['Airbnb', 'Booking', 'Plum Guide'].map((item, index) => (
