@@ -30,7 +30,7 @@ const Home = () => {
             </header>
             <div className="lg:flex lg:h-full lg:w-full lg:items-center lg:justify-center">
               <article className="flex w-full shrink-0 flex-col gap-2 px-8 pt-6 text-left text-lg md:px-10 md:pt-10 md:text-xl lg:gap-2 lg:px-0 lg:pt-0 lg:text-[16px]">
-                <h1 className="text-4xl font-bold md:text-6xl leading-none">
+                <h1 className="text-4xl font-bold md:text-5xl leading-none">
                   Explore the best <span className="lg:block">camps on Earth.</span>
                 </h1>
                 <p className="font-medium text-muted-foreground lg:w-[70%]">
