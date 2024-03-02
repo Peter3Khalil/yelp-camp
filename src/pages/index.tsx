@@ -10,6 +10,7 @@ const Home = () => {
       <Head>
         <title>YelpCamp</title>
         <meta name="viewport" content="viewport-fit=cover" />
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
       </Head>
       <main className="fixed left-0 top-0 flex h-full w-full flex-col overflow-auto bg-background text-foreground antialiased">
         {/* Hidden for large screen */}
